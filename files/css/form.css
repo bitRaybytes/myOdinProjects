@@ -1,0 +1,12 @@
+form{
+    display: grid;
+
+
+    label{
+        display: block;
+
+    }
+    input{
+    }
+
+}
