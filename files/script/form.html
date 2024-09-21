@@ -7,32 +7,40 @@
     <link rel="stylesheet" href="/myOdinProjects/files/css/form.css">
 </head>
 <body>
-    <div>
+    <div class="sidebar">
+        
         
     </div>
-    <form action="">
-        <h1>Sign up and do some great!</h1>
-        <label for="first_name">First Name</label>
-        <input type="text" name="first_name" id="first_name" required>
+    <div class="form_container">
+        <div class="form-title">
+            <p class="p-title">This is not a real online service.</p>
+            <p class="p-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, ipsam. Id dignissimos officiis nemo aut earum accusamus corrupti ullam quos, eaque, dolorem amet voluptatibus debitis distinctio odio facere vel illo!</p>
+        </div>
+        <form action="http://httpbin.org/" method="post">
+            <h2>Join our community for free!</h2>
+            <div class="form-left">
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" required>
+                <label for="email">EMail</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
 
-        <label for="last_name">Last Name</label>
-        <input type="text" name="last_name" id="last_name" required>
+            <div class="form-right">
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" required>
+                <label for="phone">Phone Number</label>
+                <input type="number" value="0 - 9" min="0" required>
+                <label for="confirm_pw">Confirm Password</label>
+                <input type="password" name="confirm_pw" id="confirm_pw" required>
+            </div>
 
-        <label for="email">EMail</label>
-        <input type="email" name="email" id="email" required>
-
-        <label for="phone">Phone Number</label>
-        <input type="number" value="0 - 9" min="0" required>
-
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" required>
-
-        <label for="confirm_pw">Confirm Password</label>
-        <input type="password" name="confirm_pw" id="confirm_pw" required>
-
-        <button type="submit">Create Account</button>
-        <p>Allready have an account? <a href="#">Log in</a></p>
-
-    </form>
+        </form>
+        <div class="submit_container">
+            <button type="submit">Create Account</button>
+            <p>Allready have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
 </body>
 </html>

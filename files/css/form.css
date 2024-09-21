@@ -1,12 +1,98 @@
-form{
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    margin: 0;
     display: grid;
-
-
-    label{
-        display: block;
-
+    grid-template-columns: 500px 1fr;
+    grid-template-areas: "sidebar form";
+    position: relative;
+    
+    .sidebar{
+        grid-area: sidebar;
+        width: 500px;
+        height: 100dvh;
+        background-color: steelblue;
     }
-    input{
+    .form_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .form-title{
+            display: block;
+            position: absolute;
+            top: 0;
+            text-align: left;
+            line-height: 2rem;
+            width: 100ch;
+            
+            .p-title, .p-normal{
+                font-size: 2rem;
+                display: block;
+                word-wrap: break-word;
+                line-break: normal;
+            }
+            .p-title{
+                line-height: normal;
+            }
+            
+        }
+        form{
+            grid-area: form;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 500px;
+            width: 100%;
+            position: relative;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.403);
+            
+            h2{
+                font-size: 3rem;
+                display: flex;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                translate: -50% 0%;
+            }
+            
+            .form-left{
+                display: block;
+                height: 100px;
+                padding: 100px;
+                
+                label{
+                    display: block;
+                    background-color: blue;
+                }
+            }
+            .form-right{
+                padding: 100px;
+                display: block;
+                height: 100px;
+                
+                label{
+                    display: block;
+                }
+                
+            }
+            
+        }
+        .submit_container{
+            grid-area: form;
+            display: block;
+            
+            
+            padding: 0px 50px;
+            
+            button{
+                width: 200px;
+                height: 50px;
+            }
+            
+        }
     }
-
 }
