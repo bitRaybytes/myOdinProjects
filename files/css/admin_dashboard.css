@@ -17,10 +17,6 @@
 }
 
 
-svg{
-    height: 40px;
-    width: 40px;
-}
 
 body{
     margin: 0;
@@ -30,7 +26,7 @@ body{
 
         .grid-container{
             display: grid;
-            grid-template-columns: 300px 1fr;
+            grid-template-columns: 330px 1fr;
             grid-template-areas: "sidebar main";
             
 
@@ -238,10 +234,9 @@ body{
                     .projects-container{
                         padding: 10px 20px;
                         display: block;
-                        background-color: red;
 
                         h2{
-                            padding-left: 10px;
+                            padding: 0 55px;
                         }
 
 
@@ -249,19 +244,18 @@ body{
 
                             display: flex;
                             height: 200px;
-                            width: 800px;
-
+                            width: auto;
+                            justify-content: space-around;
                             margin: var(--container-margin);
-
+                            
                             .item-container{
                                 background-color: #ffffff;
-                                width: 100%;
+                                width: 400px;
                                 border-radius: 10px;
                                 margin: var(--items-margin);
                                 padding: var(--items-padding);
                                 box-shadow: 0px 5px 10px var(--header-bx-shadow);
                                 position: relative;
-                                
 
                                 .rectangle{
                                     width: 8px;
@@ -295,17 +289,18 @@ body{
                         .applications{
                             display: flex;
                             height: 200px;
-                            width: 800px;
+                            width: auto;
+                            justify-content: space-around;
                             margin: 20px 0;
 
 
                             .item-container{
                                 background-color: #ffffff;
-                                width: 100%;
+                                width: 400px;
 
                                 border-radius: 10px;
-                                margin: 0 10px;
-                                padding: 0 20px;
+                                margin: var(--items-margin);
+                                padding: var(--items-padding);
                                 box-shadow: 0px 5px 10px var(--header-bx-shadow);
                                 position: relative;
 
@@ -343,16 +338,17 @@ body{
                         .software{
                             display: flex;
                             height: 200px;
-                            width: 800px;
+                            width: auto;
+                            justify-content: space-around;
                             margin: 20px 0;
 
                             .item-container{
                                 background-color: #ffffff;
-                                width: 100%;
+                                width: 400px;
 
                                 border-radius: 10px;
-                                margin: 0 10px;
-                                padding: 0 20px;
+                                margin: var(--items-margin);
+                                padding: var(--items-padding);
                                 box-shadow: 0px 5px 10px var(--header-bx-shadow);
                                 position: relative;
 
@@ -428,35 +424,49 @@ body{
                         .trending{
                             overflow: hidden;
                             height: 300px;
-                            overflow-y: scroll;
+                            /* overflow-y: scroll; */
                             background-color: white;
                             border-radius: 10px;
                             width: 300px;
-                            scroll-behavior: smooth;
-                            
+                            height: max-content;
+
                             .trending-item{
 
-                                display: flex;
-                                /* align-items: center; */
+                                display: inline-block;
+                                
                                 justify-content: space-evenly;
-                                background-color: green;
                                 padding: 10px 25px;
                                 
-                                .trend-circle{
-                                    width: 40px;
-                                    height:40px;
-                                    background-color: blue;
-                                    border-radius: 100%;
-                                }
-                                .trend-text{
-                                    line-height: .5rem;
-                                    a{
-                                        text-decoration: none;
-                                        color: black;
-    
+                                .trend-profile-container{
+                                    display: flex;
+                                    justify-content: left;
+                                    width: 250px;
+                                    align-items: center;
+                                    background-color: green;
+
+                                    .trend-circle{
+                                        width: 40px;
+                                        height:40px;
+                                        background-color: blue;
+                                        border-radius: 100%;
                                     }
-                                    p{}
+                                    .trend-text{
+                                        display: block;
+                                        
+                                        padding: 0 20px;
+                                        line-height: 0.2rem;
+                                        
     
+                                        a{
+                                            text-decoration: none;
+                                            color: black;
+        
+                                        }
+                                        p{
+                                            font-size: .9rem;
+                                        }
+        
+                                    }
                                 }
                             }
                         }
