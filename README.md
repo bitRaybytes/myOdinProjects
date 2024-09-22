@@ -7,7 +7,7 @@ https://www.theodinproject.com
 
 Make sure to check out this website if you are new to html, css and js.
 
-Greeting from a place which we call earth.
+Greetings from a place, what we call earth 🌱.
 
 P.S.:
 If you have any suggestion or tips and tricks which I can rely on in my further steps in development, feel free to write me a message.

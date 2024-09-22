@@ -19,27 +19,40 @@
         <form action="http://httpbin.org/" method="post">
             <h2>Join our community for free!</h2>
             <div class="form-left">
-                <label for="first_name">First Name</label>
-                <input type="text" name="first_name" id="first_name" required>
-                <label for="email">EMail</label>
-                <input type="email" name="email" id="email" required>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
+                <div class="fname">
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name" required>
+                </div>
+                <div class="mail">
+                    <label for="email">EMail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="pw-left">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                    <p class="pw-text">*Passwords do not match</p>
+                </div>
             </div>
 
             <div class="form-right">
-                <label for="last_name">Last Name</label>
-                <input type="text" name="last_name" id="last_name" required>
-                <label for="phone">Phone Number</label>
-                <input type="number" value="0 - 9" min="0" required>
-                <label for="confirm_pw">Confirm Password</label>
-                <input type="password" name="confirm_pw" id="confirm_pw" required>
+                <div class="lname">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" required>
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" min="0" pattern="" required>
+                </div>
+                <div class="pw-right">
+                    <label for="confirm_pw">Confirm Password</label>
+                    <input type="password" name="confirm_pw" id="confirm_pw" required>
+                </div>
             </div>
 
         </form>
         <div class="submit_container">
             <button type="submit">Create Account</button>
-            <p>Allready have an account? <a href="#">Log in</a></p>
+            <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
 </body>
